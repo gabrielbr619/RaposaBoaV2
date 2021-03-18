@@ -1,0 +1,37 @@
+footer{
+  width: 100%;
+  height: 100vh;
+  background-color: #111;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  
+  #footer-page{
+    height: 100vh;
+    display: grid;
+    margin: 0 12em;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    align-content: center;
+    @include xl{
+      margin: 0;
+      display: block;
+    }
+  h1{
+    color:#3d3d3d;
+    grid-column: 1;
+    font-size: 6vh;
+
+
+    @include xl{
+      font-size: 4vh;
+      padding: 1em;
+    }
+  }
+
+  #h1-email{
+    color: white;
+    grid-column: 1;
+  }
+}
+}

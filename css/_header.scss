@@ -1,0 +1,82 @@
+@import "variables";
+
+#nav-conteiner {
+  width: 100%;
+  top: 0;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  margin: 2em 0em 0em 3em;
+  align-items: center;
+
+  #test{
+    margin-right: 4em;
+  }
+
+  @include xl{
+    justify-content: space-between;
+    margin:1em 1em 0em 1em;
+    position: relative;
+  }
+  #logo:hover {
+    transition-duration: 0.5s;
+    animation: raposa 2s;
+
+    @keyframes raposa {
+      0% {
+        transform: rotate(0deg);
+      }
+      30% {
+        transform: rotate(30deg);
+      }
+      60% {
+        transform: rotate(-30deg);
+      }
+    }
+  }
+
+  #menu-hamburguer {
+    height: 37px;
+    width: 50px;
+    display: block;
+    flex-direction: column;
+    left: 85em;
+    cursor: pointer;
+    @include xl{
+      left:18em;
+    }
+    span {
+      display: block;
+      position: relative;
+      height: 3px;
+      width: 100%;
+      background: #d3531a;
+      border-radius: 0;
+      opacity: 1;
+      left: 0;
+    }
+    span:nth-child(1) {
+      top: 0;
+    }
+    span:nth-child(2) {
+      top: 18px;
+    }
+    span:nth-child(3) {
+      top: 27px;
+    }
+  }
+  #menu-hamburguer:hover {
+    transition-duration: 0.5s;
+    background-color: rgb(247, 144, 48);
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+
+    span {
+      display: none;
+    }
+  }
+  #logo-icon{
+    display: none;
+  }
+}

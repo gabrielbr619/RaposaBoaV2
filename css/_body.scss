@@ -1,0 +1,84 @@
+@import "variables";
+*{
+  padding: 0;
+  margin: 0;
+}
+
+
+
+main {
+  margin-left: 12em;
+  margin-top: 7em;
+  margin-bottom: 14em;
+
+  @include xl{
+    margin-left: 2em;
+    margin-top: 6em;
+    width: 100%;
+  }
+  
+  #square-orange{
+    height: 32em;
+    width: 57em;
+    background-color: rgb(247, 144, 48);
+    position: absolute;
+    top: 10em;
+    left: 27.2em;
+    z-index: -1;
+
+    @include xl{
+      top: 20em;
+      left: 0em;
+      width: 100%;
+    }
+  }
+    #raposaboa-h1{
+      color: white;
+      font-family: $font-sans
+    }
+  h1 {
+    font-family: $font-serif;
+    font-size: 12vh;
+
+    @include xl{
+      font-size:9vh;
+    }
+  }
+  
+  p{
+    font-size: 3vh;
+    font-family: $font-sans;
+
+    @include xl{
+      margin-top: 2em;
+      font-size: 2.5vh;
+      margin-right: 2em;
+    }
+  }
+  .p-white{
+    color: white;
+  }
+}
+
+section{
+  margin: 50vh 0;
+
+  #sobre-raposaboa{
+    margin-top: 3em;
+    width: 8em;
+    height: 2.5em;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: solid rgb(247, 144, 48);
+    background-color: white;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    outline: none;
+    color: rgb(247, 144, 48);
+  }
+}
+#sobre-raposaboa:hover{
+  background-color: rgb(247, 144, 48);
+    color: white;
+    border-radius: 5em;
+}

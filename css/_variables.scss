@@ -1,0 +1,13 @@
+$font-serif: 'Playfair Display', serif;
+$font-sans: 'Rubik', sans-serif;
+
+//Breakpoints
+
+// tablet grande e desktops
+$screen-xl-min: 376px;
+
+@mixin xl {
+    @media (max-width: #{$screen-xl-min}) {
+        @content;
+    }
+ }
