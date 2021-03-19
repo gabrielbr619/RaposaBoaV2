@@ -8,6 +8,12 @@ html {
           box-sizing: border-box;
 }
 
+@media (max-width: 376px) {
+  html {
+    width: 100%;
+  }
+}
+
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
@@ -15,7 +21,6 @@ html {
 
 body {
   width: 100%;
-  overflow-x: hidden;
 }
 
 main {
@@ -26,10 +31,15 @@ main {
 
 @media (max-width: 376px) {
   main {
-    margin-left: 2em;
+    padding-left: 2em;
+    margin-left: 0;
     margin-top: 6em;
     width: 100%;
   }
+}
+
+main section {
+  width: inherit;
 }
 
 main #square-orange {
@@ -75,7 +85,6 @@ main p {
   main p {
     margin-top: 2em;
     font-size: 2.5vh;
-    margin-right: 2em;
   }
 }
 
@@ -158,6 +167,12 @@ footer #footer-page #h1-email {
   grid-column: 1;
 }
 
+@media (max-width: 376px) {
+  header {
+    width: 100%;
+  }
+}
+
 #nav-conteiner {
   width: 100%;
   top: 0;
@@ -179,12 +194,20 @@ footer #footer-page #h1-email {
 }
 
 @media (max-width: 376px) {
+  #nav-conteiner #test {
+    margin: 0;
+  }
+}
+
+@media (max-width: 376px) {
   #nav-conteiner {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin: 1em 1em 0em 1em;
+    margin: 0;
+    padding: 1.5em;
     position: relative;
+    width: 100%;
   }
 }
 
