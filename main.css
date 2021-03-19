@@ -3,6 +3,21 @@
   margin: 0;
 }
 
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 main {
   margin-left: 12em;
   margin-top: 7em;
@@ -153,7 +168,7 @@ footer #footer-page #h1-email {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 2em 0em 0em 3em;
+  margin: 2em 0em 0em 2em;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
