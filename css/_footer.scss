@@ -17,6 +17,7 @@ footer{
     @include xl{
       margin: 0;
       display: block;
+      padding: 1em;
     }
   h1{
     color:#3d3d3d;
@@ -26,7 +27,6 @@ footer{
 
     @include xl{
       font-size: 4vh;
-      padding: 1em;
     }
   }
 

@@ -144,6 +144,7 @@ footer #footer-page {
   footer #footer-page {
     margin: 0;
     display: block;
+    padding: 1em;
   }
 }
 
@@ -157,7 +158,6 @@ footer #footer-page h1 {
 @media (max-width: 376px) {
   footer #footer-page h1 {
     font-size: 4vh;
-    padding: 1em;
   }
 }
 
