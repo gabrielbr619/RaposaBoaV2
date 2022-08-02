@@ -1,14 +1,10 @@
-const menuHamburguer = document.querySelector("#menu-hamburguer")
+const menu_hamburguer = document.querySelector("#menu-hamburguer")
+const fox_icon = document.querySelector("#logo-icon");
 
-menuHamburguer.addEventListener('mouseover',animacaoRaposa)
-menuHamburguer.addEventListener('mouseleave',animacaoRaposa2)
+menu_hamburguer.addEventListener('mouseover',animation_fox)
+menu_hamburguer.addEventListener('mouseleave',animation_fox_2)
 
-function animacaoRaposa(){
-  const raposaIcon = document.getElementById("logo-icon");
-  raposaIcon.style.display="block";
-}
-function animacaoRaposa2(){
-  const raposaIcon = document.getElementById("logo-icon");
-  raposaIcon.style.display="none";
-}
+const animation_fox = () => fox_icon.style.display="block";
+const animation_fox_2 = () => fox_icon.style.display="none";
+
 
